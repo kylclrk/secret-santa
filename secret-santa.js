@@ -111,7 +111,7 @@ const validPick = (person, pick) => {
   if (pick.picked) return false;
   if (person.spouse === pick.name) return false;
   if (person.name === pick.name) return false;
-  if (person.previous === pick.name) { }
+  if (person.previous.includes(pick.name)) { }
   return true;
 }
 
